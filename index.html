@@ -1,0 +1,36 @@
+
+
+<html>
+<head>
+<!-- Reference source http://davidwalsh.name/css-flip -->
+<link rel="stylesheet" type="text/css" href="flipper.css">
+</head>
+<body>
+
+<div id="myCard" class="flip-container" >
+	<div class="flipper">
+		<div class="front">
+			<!-- front content -->
+			<p>front content</p>
+		</div>
+		<div class="back">
+			<!-- back content -->
+			<p>back content</p>
+		</div>
+	</div>
+</div>
+
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+
+<script type="text/javascript">
+
+document.getElementById("clickMe").onclick = function () { 
+	//alert('hello!'); 
+	document.querySelector("#myCard").classList.toggle("flip")
+};
+
+	
+
+</script>
+</body>
+</html>
